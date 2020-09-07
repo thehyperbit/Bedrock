@@ -3,13 +3,14 @@
 </p>
 
 
-<h2 align="center">
+<h1 align="center">
     Bedrock
-</h2>
+</h1>
 
-<h4 align="center">
+<p align="center">
     А ты попробуй сломать!
-</h4>
+    
+</p>
 
 
 
