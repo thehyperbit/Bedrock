@@ -6,7 +6,7 @@
     Bedrock
 </h1>
 
-<h3 align="center">
+<h3>
     А ты попробуй сломать!
 </h3>
 
