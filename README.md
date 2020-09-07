@@ -1,5 +1,5 @@
 <p align="center">
-<img alt="https://sun9-63.userapi.com/impg/jqtHXi1AoXtR9QJcmt9zlQWvxu0yXNMtst2sHA/_4729YSvXSg.jpg?size=200x0&quality=90&crop=33,33,934,934&sign=33811e0041a9d4b008ed2b98dd354d92&ava=1">
+<img src="https://sun9-63.userapi.com/impg/jqtHXi1AoXtR9QJcmt9zlQWvxu0yXNMtst2sHA/_4729YSvXSg.jpg?size=200x0&quality=90&crop=33,33,934,934&sign=33811e0041a9d4b008ed2b98dd354d92&ava=1">
 </p>
 
 
