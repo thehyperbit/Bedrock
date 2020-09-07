@@ -2,13 +2,13 @@
     <img src="https://sun9-63.userapi.com/impg/jqtHXi1AoXtR9QJcmt9zlQWvxu0yXNMtst2sHA/_4729YSvXSg.jpg?size=100x0&quality=88&crop=33,33,934,934&sign=b2e62fde08a39c1fb86b779ff7361fff&ava=1">
 </p>
 
-<h1 align="center">
+<h2 align="center">
     Bedrock
-</h1>
+</h2>
 
-<p align="center">
+<h4 align="center">
     А ты попробуй сломать!
-</p>
+</h4>
 
 
 
