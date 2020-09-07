@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://c28eyg.am.files.1drv.com/y4mKB6VEjJJlgTEP-_Tk6Y6hBifWd-lYojWLkkCCvj0PqASAZ5LmtpN6wt21LAZovNUp057EfL104QWvLzBmNSZoprOzVvK-dG0hrLX-miaMVwFIV9K4HVTbuzS8wyvltuc15Wuppq1wliqxhlsh9vUWAOg7W7ZSfYIG7Gtt8GCLzHdBXnfN38QTHudZK_m__eCHOjW3kXW6tQ60bkbsgfD5Q?width=181&height=182&cropmode=none">
+    <img src="https://onedrive.live.com/embed?cid=2753FEEEC6A111C8&resid=2753FEEEC6A111C8%215511&authkey=AEcET4MgGlO14tY">
 </p>
 
 <iframe src="https://onedrive.live.com/embed?cid=2753FEEEC6A111C8&resid=2753FEEEC6A111C8%215511&authkey=AEcET4MgGlO14tY" width="98" height="120" frameborder="0" scrolling="no"></iframe>
