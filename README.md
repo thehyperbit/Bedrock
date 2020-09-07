@@ -1,4 +1,4 @@
-![screenshot of sample](https://www.google.com/url?sa=i&url=https%3A%2F%2Fminecraft.fandom.com%2Fwiki%2FBedrock&psig=AOvVaw3ta1NoidJHySDVkya-j1hn&ust=1599592367722000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLiEzaPg1-sCFQAAAAAdAAAAABAD)
+![screenshot of sample](https://vignette.wikia.nocookie.net/minecraft/images/7/71/BedrockNew.png/revision/latest?cb=20190916224624)
 
 
 # Bedrock™
