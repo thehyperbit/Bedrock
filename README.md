@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-    Bedrock™
+    Bedrock
 </h1>
 
 
