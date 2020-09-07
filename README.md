@@ -6,9 +6,9 @@
     Bedrock
 </h1>
 
-<h2 align="center">
+<h3 align="center">
     А ты попробуй сломать!
-</h2>
+</h3>
 
 
 
