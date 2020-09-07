@@ -1,4 +1,4 @@
-![screenshot of sample](http://webdesign.ru.net/images/Heydon_min.jpg)
+![screenshot of sample](https://www.google.com/url?sa=i&url=https%3A%2F%2Fminecraft.fandom.com%2Fwiki%2FBedrock&psig=AOvVaw3ta1NoidJHySDVkya-j1hn&ust=1599592367722000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLiEzaPg1-sCFQAAAAAdAAAAABAD)
 
 
 # Bedrock™
