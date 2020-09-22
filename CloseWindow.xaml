@@ -1,0 +1,37 @@
+﻿<Window x:Class="Bedrock.CloseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bedrock"
+        mc:Ignorable="d"
+        Title="Вы уверены?"
+        Height="180" Width="360"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterOwner">
+
+    <Border Background="#1f1f1f" BorderThickness="2" BorderBrush="White" CornerRadius="14">
+        <Grid>
+
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,80" Text="Вы уверены?" Foreground="White" FontSize="28" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+
+            <Border x:Name="WindowCloseFragmentExitBorder" Width="140" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="180,110,0,0" Background="Black" BorderBrush="White" BorderThickness="2" CornerRadius="10">
+                <Grid>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Content="Выйти" Foreground="White" FontSize="18" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                    <Button Width="140" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Opacity="0" Click="LauncherClose" MouseLeave="WindowCloseFragmentExitButtonMouseLeave" MouseEnter="WindowCloseFragmentExitButtonMouseEnter"/>
+                </Grid>
+            </Border>
+
+            <Border x:Name="WindowCloseFragmentReturnBorder" Width="140" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,110,180,0" Background="#e06b15" BorderBrush="White" BorderThickness="2" CornerRadius="10">
+                <Grid>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Content="Остаться" Foreground="White" FontSize="18" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                    <Button Width="140" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Opacity="0" Click="LauncherReturn" MouseEnter="WindowCloseFragmentReturnButtonMouseEnter" MouseLeave="WindowCloseFragmentReturnBorderMouseLeave"/>
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Border>
+    
+</Window>

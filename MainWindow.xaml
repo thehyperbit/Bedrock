@@ -1,0 +1,311 @@
+﻿<Window x:Class="Bedrock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bedrock"
+        mc:Ignorable="d"
+        Title="Bedrock"
+        Height="704" Width="1284"
+        Background="Transparent"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Opacity="1"
+        ResizeMode="CanMinimize"
+        MouseMove="MovementWindow" Closing="ClosingWindow" StateChanged="StateChangedWindow">
+
+    <Border Background="Black" BorderBrush="Transparent" BorderThickness="0" CornerRadius="14">
+        <Grid>
+
+            <Image Width="100" Height="704" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="1040,0,0,0" Source="LavaShadow.png" Opacity="0.6"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,660" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,580" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,464" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,348" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,232" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,116" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,0" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,-116" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,-232" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,-348" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,-464" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,-580" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+            <Image Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1040,0,0,-696" gif:ImageBehavior.AnimatedSource="Lava.gif"/>
+
+
+
+            <Grid>
+                <Border x:Name="WindowMainFragmentServer" Width="280" Height="240" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="920,0,0,420" BorderBrush="White" BorderThickness="2" CornerRadius="10" Background="#1f1f1f" Opacity="0">
+                    <Grid>
+                        <Image x:Name="WindowMainFragmentServerImageWallpaper" Width="500" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Source="WallpaperServer.jpg" Opacity="0.2" />
+                        <Image Width="200" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,40,140" Source="message_bubble.png"/>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,30,146" Text="  Ты тоже можешь играть с друзьями!" TextWrapping="Wrap" Foreground="Black" FontSize="14" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium" Width="139" Height="47"/>
+                        <Image Width="200" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="58,49,18.8,-12.2" Source="Guys.png"/>
+                        <Border x:Name="WindowMainFragmentServerBorderCreate" Width="100" Height="34" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="140,170,0,0" Background="#e06b15" BorderBrush="WhiteSmoke" BorderThickness="2" CornerRadius="10">
+                            <Grid>
+                                <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Content="Создать" Foreground="White" FontSize="16" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                                <Button x:Name="WindowMainFragmentServerButtonCreate" Width="100" Height="34" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Opacity="0" MouseEnter="WindowMainFragmentServerButtonCreateMouseEnter" MouseLeave="WindowMainFragmentServerButtonCreateMouseLeave" Click="WindowMainFragmentServerButtonCreateClick"/>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+                </Border>
+
+                <Border x:Name="WindowMainFragmentClaim" Width="280" Height="140" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="920,0,0,0" CornerRadius="10" BorderThickness="2" BorderBrush="White" Background="#1f1f1f" Opacity="0">
+                    <Grid>
+                        <Image Width="160" Height="160" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-20,120,0" Source="Herobrine.png"/>
+                        <Image x:Name="WindowMainFragmentClaimImageHerobrineMask" Width="160" Height="160" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-20,120,0" Source="HerobrineMask.png" Opacity="0"/>
+                        <TextBlock Width="120" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="120,0,0,56" Text="   Заметил нарушение?" TextWrapping="Wrap" Foreground="White" FontSize="20" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                        <Border x:Name="WindowMainFragmentClaimBorderReport" Width="100" Height="34" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="140,70,0,0" Background="#e06b15" BorderBrush="WhiteSmoke" BorderThickness="2" CornerRadius="10">
+                            <Grid>
+                                <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Content="Жалоба" Foreground="White" FontSize="16" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                                <Button x:Name="WindowMainFragmentClaimButtonReport" Width="100" Height="34" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Opacity="0" Click="WindowMainFragmentСlaimButtonReportClick" MouseEnter="WindowMainFragmentСlaimButtonReportMouseEnter" MouseLeave="WindowMainFragmentСlaimButtonReportMouseLeave"/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </Border>
+            </Grid>
+
+            <Grid Width="220" Height="704" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,980,0" Background="#1f1f1f">
+                <Border Width="170" Height="170" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,500" Background="#2e2e2e" CornerRadius="14" BorderThickness="4"/>
+
+
+
+                <Grid>
+                    <Viewbox Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,120,200">
+                        <Viewbox.Effect>
+                            <DropShadowEffect/>
+                        </Viewbox.Effect>
+                        <Canvas Width="24" Height="24">
+                            <Path Data="M9,5V9H21V5M9,19H21V15H9M9,14H21V10H9M4,9H8V5H4M4,19H8V15H4M4,14H8V10H4V14Z" Fill="White" />
+                        </Canvas>
+                    </Viewbox>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2,2,0,200" Content="Сервера" FontSize="16" Foreground="White" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                    <Button Width="130" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,20,200" Opacity="0" Click="WindowMainFragmentControlButtonServersClick" MouseEnter="WindowMainFragmentControlButtonServersMouseEnter" MouseLeave="WindowMainFragmentControlButtonServersMouseLeave"/>
+                </Grid>
+
+                <Grid>
+                    <Viewbox Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,120,80">
+                        <Viewbox.Effect>
+                            <DropShadowEffect/>
+                        </Viewbox.Effect>
+                        <Canvas Width="24" Height="24">
+                            <Path Data="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,
+                                  14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,
+                                  11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,
+                                  22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" Fill="White" />
+                        </Canvas>
+                    </Viewbox>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="8,2,0,80" Content="Профиль" FontSize="16" Foreground="White" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                    <Button Width="130" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,20,80" Opacity="0" MouseEnter="WindowMainFragmentControlButtonProfileMouseEnter" MouseLeave="WindowMainFragmentControlButtonProfileMouseLeave"/>
+                </Grid>
+
+                <Grid>
+                    <Viewbox Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,120,-40">
+                        <Viewbox.Effect>
+                            <DropShadowEffect/>
+                        </Viewbox.Effect>
+                        <Canvas Width="24" Height="24">
+                            <Path Data="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,                                   18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,                                   2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,                                   14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,                                   5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,                                   22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" Fill="White" />
+                        </Canvas>
+                    </Viewbox>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2,2,0,-40" Content="Магазин" FontSize="16" Foreground="White" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                    <Button Width="130" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,20,-40" Opacity="0" MouseEnter="WindowMainFragmentControlButtonShopMouseEnter" MouseLeave="WindowMainFragmentControlButtonShopMouseLeave"/>
+                </Grid>
+
+                <Grid>
+                    <Viewbox Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,120,-160">
+                        <Viewbox.Effect>
+                            <DropShadowEffect/>
+                        </Viewbox.Effect>
+                        <Canvas Width="24" Height="24">
+                            <Path Data="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,
+                                  3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,                                   11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,                                   5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,                                   2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,                                   5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,                                   9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,                                   12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,                                   19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,                                   21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,                                   18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,                                   15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" Fill="White" />
+                        </Canvas>
+                    </Viewbox>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,2,0,-160" Content="Настройки" FontSize="16" Foreground="White" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                    <Button Width="130" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,20,-160" Opacity="0" Click="WindowMainFragmentControlButtonSettingsClick" MouseEnter="WindowMainFragmentControlButtonSettingsMouseEnter" MouseLeave="WindowMainFragmentControlButtonSettingsMouseLeave"/>
+                </Grid>
+
+                <Grid>
+                    <Viewbox x:Name="WindowMainFragmentControlIconDoorOne" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,120,-640">
+                        <Viewbox.Effect>
+                            <DropShadowEffect/>
+                        </Viewbox.Effect>
+                        <Canvas Width="24" Height="24">
+                            <Path Data="M8,3C6.89,3 6,3.89 6,5V21H18V5C18,3.89 17.11,3 16,3H8M8,5H16V19H8V5M13,11V13H15V11H13Z" Fill="White" />
+                        </Canvas>
+                    </Viewbox>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,2,0,-640" Content="Выход" FontSize="16" Foreground="Gray" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium" Opacity="0"/>
+                </Grid>
+
+                <Grid>
+                    <Viewbox x:Name="WindowMainFragmentControlIconDoorTwo" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,127,-640" Opacity="0">
+                        <Viewbox.Effect>
+                            <DropShadowEffect/>
+                        </Viewbox.Effect>
+                        <Canvas Width="24" Height="24">
+                            <Path Data="M12,3C10.89,3 10,3.89 10,5H3V19H2V21H22V19H21V5C21,3.89 20.11,3 19,3H12M12,5H19V19H12V5M5,11H7V13H5V11Z" Fill="White" />
+                        </Canvas>
+                    </Viewbox>
+                </Grid>
+                <Button Width="32" Height="32" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,120,-640" Opacity="0" Click="CloseWindow" MouseLeave="WindowMainFragmentControlButtonDoorMouseLeave" MouseEnter="WindowMainFragmentControlButtonDoorMouseEnter" />
+
+                <Grid>
+                    <Viewbox x:Name="WindowMainFragmentControlIconFocus" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,120,-640" Opacity="0">
+                        <Canvas Width="24" Height="24">
+                            <Path Data="M19,3H15V5H19V9H21V5C21,3.89 20.1,3 19,3M19,19H15V21H19A2,2 0 0,0 21,19V15H19M5,
+                                  15H3V19A2,2 0 0,0 5,21H9V19H5M3,5V9H5V5H9V3H5A2,2 0 0,0 3,5Z" Fill="White" />
+                        </Canvas>
+                    </Viewbox>
+                </Grid>
+
+
+
+
+            </Grid>
+
+            <Border Width="600" Height="704" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,60,0" BorderBrush="WhiteSmoke" BorderThickness="0,0,0,0" Background="#1f1f1f">
+                <Grid Width="600" Height="704" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
+                    <Grid>
+                        <ScrollViewer x:Name="WindowMainFragmentSettingsScrollMain" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsEnabled="False" Opacity="0">
+                            <StackPanel>
+                                <Viewbox Height="20"/>
+                                <Border Width="566" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Background="#2e2e2e" CornerRadius="8">
+                                    <Grid>
+                                        <Label x:Name="WindowMainFragmentSettingsScrollMainLabelVersionOS" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="7,0,0,0" Content="Версия OS:" Foreground="White" FontSize="16" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                                        <Viewbox Width="28" Height="28" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="530,0,0,1">
+                                            <Canvas Width="24" Height="24">
+                                                <Path Fill="#00BFFF" Data="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" />
+                                            </Canvas>
+                                        </Viewbox>
+                                    </Grid>
+                                </Border>
+                                <Viewbox Height="15"/>
+                                <Border Width="566" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Background="#2e2e2e" CornerRadius="8">
+                                    <Grid>
+                                        <Label x:Name="WindowMainFragmentSettingsScrollMainLabelVersionLauncher" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="7,0,0,0" Content="Версия Лаунчера:" Foreground="White" FontSize="16" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                                        <Viewbox Width="28" Height="28" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="530,0,0,1">
+                                            <Canvas Width="24" Height="24">
+                                                <Path Fill="DimGray" Data="M17,16V14H7V16H17M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5C3,3.89 3.89,3 5,3H19M17,10V8H7V10H17Z" />
+                                            </Canvas>
+                                        </Viewbox>
+                                    </Grid>
+                                </Border>
+                                <Viewbox Height="15"/>
+                                <Border Width="566" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Background="#2e2e2e" CornerRadius="8">
+                                    <Grid>
+                                        <Label x:Name="WindowMainFragmentSettingsScrollMainLabelVersionJava" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="7,0,0,0" Content="Версия Java:" Foreground="White" FontSize="16" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                                        <Viewbox Width="28" Height="28" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="530,0,0,1">
+                                            <Canvas Width="24" Height="24">
+                                                <Path Fill="Orange" Data="M16.5,6.08C16.5,6.08 9.66,7.79 12.94,11.56C13.91,12.67 12.69,13.67 12.69,13.67C12.69,13.67 15.14,
+                                              12.42 14,10.82C12.94,9.35 12.14,8.62 16.5,6.08M12.03,7.28C16.08,4.08 14,2 14,2C14.84,5.3 11.04,6.3 9.67,8.36C8.73,
+                                              9.76 10.13,11.27 12,13C11.29,11.3 8.78,9.84 12.03,7.28M9.37,17.47C6.29,18.33 11.25,20.1 15.16,18.43C14.78,18.28 14.41,
+                                              18.1 14.06,17.89C12.7,18.2 11.3,18.26 9.92,18.07C8.61,17.91 9.37,17.47 9.37,17.47M14.69,15.79C12.94,16.17 11.13,
+                                              16.26 9.35,16.05C8.04,15.92 8.9,15.28 8.9,15.28C5.5,16.41 10.78,17.68 15.5,16.3C15.21,16.19 14.93,16 14.69,
+                                              15.79M18.11,19.09C18.11,19.09 18.68,19.56 17.5,19.92C15.22,20.6 8.07,20.81 6.09,19.95C5.38,19.64 6.72,19.21 7.14,
+                                              19.12C7.37,19.06 7.6,19.04 7.83,19.04C7.04,18.5 2.7,20.14 5.64,20.6C13.61,21.9 20.18,20 18.11,19.09M15.37,14.23C15.66,
+                                              14.04 15.97,13.88 16.29,13.74C16.29,13.74 14.78,14 13.27,14.14C11.67,14.3 10.06,14.32 8.46,14.2C6.11,13.89 9.75,13 9.75,
+                                              13C8.65,13 7.57,13.26 6.59,13.75C4.54,14.75 11.69,15.2 15.37,14.23M16.27,16.65C16.25,16.69 16.23,16.72 16.19,16.75C21.2,
+                                              15.44 19.36,12.11 16.96,12.94C16.83,13 16.72,13.08 16.65,13.19C16.79,13.14 16.93,13.1 17.08,13.07C18.28,
+                                              12.83 20,14.7 16.27,16.65M16.4,21.26C13.39,21.78 10.31,21.82 7.28,21.4C7.28,21.4 7.74,21.78 10.09,
+                                              21.93C13.69,22.16 19.22,21.8 19.35,20.1C19.38,20.11 19.12,20.75 16.4,21.26Z" />
+                                            </Canvas>
+                                        </Viewbox>
+                                    </Grid>
+                                </Border>
+                                <Viewbox Height="15"/>
+                                <Border Width="566" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Background="#2e2e2e" CornerRadius="8">
+                                    <Grid>
+                                        <Label x:Name="WindowMainFragmentSettingsScrollMainLabelVersionMinecraft" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="7,0,0,0" Content="Версия Minecraft:" Foreground="White" FontSize="16" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium"/>
+                                        <Viewbox Width="28" Height="28" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="530,0,0,1">
+                                            <Canvas Width="24" Height="24">
+                                                <Path Fill="Green" Data="M4,2H20A2,2 0 0,1 22,4V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V4A2,2 0 0,1 4,2M6,6V10H10V12H8V18H10V16H14V18H16V12H14V10H18V6H14V10H10V6H6Z" />
+                                            </Canvas>
+                                        </Viewbox>
+                                    </Grid>
+                                </Border>
+                                <Viewbox Height="15"/>
+
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+
+                    <Grid x:Name="WindowMainFragmentProfile">
+                        
+                        
+                    </Grid>
+
+
+
+
+                    <Grid x:Name="WindowMainFragmentServers" Opacity="0">
+                        <StackPanel>
+                            <Viewbox Height="15"/>
+                            <Border x:Name="WindowMainFragmentServersBorderTop" Width="160" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,396,0" Background="#e06b15" BorderBrush="WhiteSmoke" BorderThickness="2" CornerRadius="6">
+                                <ComboBox x:Name="WindowMainFragmentServersBorderTopComboBox" Width="140" Height="30" Focusable="False" BorderThickness="0" Background="#e06b15" FontSize="14" Foreground="White" SelectedIndex="0" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium" Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" DropDownClosed="WindowMainFragmentServersBorderTopComboBoxDropDownClosed">
+                                    <ComboBox.ItemContainerStyle>
+                                        <Style TargetType="ComboBoxItem">
+                                            <Setter Property="BorderBrush" Value="#e06b15"/>
+                                            <Setter Property="Background" Value="#e06b15"/>
+
+                                        </Style>
+                                    </ComboBox.ItemContainerStyle>
+                                    <ComboBoxItem Content="Серверы проекта"/>
+                                    <ComboBoxItem Content="Серверы игроков"/>
+                                </ComboBox>
+                            </Border>
+                            <Viewbox Height="15"/>
+                            <ScrollViewer x:Name="WindowMainFragmentServersScrollProject" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsEnabled="True" Opacity="1">
+                                <StackPanel>
+                                    <Border x:Name="WindowMainFragmentServersScrollProjectServerHardcoreBorder" Width="566" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Background="#2e2e2e" CornerRadius="8">
+                                        <Grid>
+                                            <Border Width="210" Height="46" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0" BorderBrush="Black" BorderThickness="2" Background="WhiteSmoke" CornerRadius="8">
+                                                <Image Width="190" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,1,0" Source="hardcore.png" />
+                                            </Border>
+                                            <TextBlock Width="140" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="250,0,0,00" Text="Попробуй выжить в этой песочнице!" TextWrapping="Wrap" FontSize="15" Foreground="WhiteSmoke" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium" />
+                                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="494,0,0,00" Content="4/100" FontSize="18" Foreground="WhiteSmoke" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium" />
+                                            <Button x:Name="WindowMainFragmentServersScrollProjectServerHardcoreButton" Width="566" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Opacity="0" Click="WindowMainFragmentServersScrollProjectServerHardcoreButtonClick" MouseEnter="WindowMainFragmentServersScrollProjectServerHardcoreButtonMouseEnter" MouseLeave="WindowMainFragmentServersScrollProjectServerHardcoreButtonMouseLeave" />
+                                        </Grid>
+                                    </Border>
+                                    <Viewbox Height="15"/>
+                                    <Border x:Name="WindowMainFragmentServersScrollProjectServerSkyblockBorder" Width="566" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Background="#2e2e2e" CornerRadius="8">
+                                        <Grid>
+                                            <Border Width="210" Height="46" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0" BorderBrush="Black" BorderThickness="2" Background="WhiteSmoke" CornerRadius="8">
+                                                <Image Width="194" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Source="skyblock.png" />
+                                            </Border>
+                                            <TextBlock Width="140" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="250,0,0,00" Text="Ангельские войны прямо в небесах!" TextWrapping="Wrap" FontSize="15" Foreground="WhiteSmoke" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium" />
+                                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="494,0,0,00" Content="0/100" FontSize="18" Foreground="WhiteSmoke" FontFamily="/Bedrock;component/Resources/Fonts/#Google Sans Medium" />
+                                            <Button x:Name="WindowMainFragmentServersScrollProjectServerSkyblockButton" Width="566" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Opacity="0" Click="WindowMainFragmentServersScrollProjectServerSkyblockButtonClick" MouseEnter="WindowMainFragmentServersScrollProjectServerSkyblockButtonMouseEnter" MouseLeave="WindowMainFragmentServersScrollProjectServerSkyblockButtonMouseLeave" />
+                                        </Grid>
+                                    </Border>
+                                    <Viewbox Height="15"/>
+                                </StackPanel>
+                            </ScrollViewer>
+
+                            <ScrollViewer x:Name="WindowMainFragmentServersScrollPlayers" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" Visibility="Collapsed" IsEnabled="False" Opacity="0">
+                                <StackPanel>
+
+                                </StackPanel>
+                            </ScrollViewer>
+                        </StackPanel>
+
+                    </Grid>
+
+
+                </Grid>
+            </Border>
+        </Grid>
+      
+    </Border>
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <TextBlock x:Key="CursorMain" Cursor="Resources/Controls/CursorMain.cur"/>
+            <TextBlock x:Key="CursorMovement" Cursor="Resources/Controls/CursorMovement.cur"/>
+        </ResourceDictionary>
+    </Window.Resources>
+
+</Window>
