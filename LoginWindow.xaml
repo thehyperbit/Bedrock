@@ -1,0 +1,97 @@
+﻿<Window x:Class="Bedrock.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bedrock"
+        mc:Ignorable="d"
+        Title="Авторизация" 
+        Width="280" Height="500"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStartupLocation="CenterOwner"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing">
+    
+    <Grid>
+        <Border Width="280" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" CornerRadius="14" Background="#1f1f1f" BorderBrush="White" BorderThickness="2" MouseLeftButtonDown="Window_Movement">
+            <Grid>
+
+                <TextBlock x:Name="LoginPrompt" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-165,-380,0,0" Text="Логин:" Foreground="Gray" FontSize="10"/>
+                <Border x:Name="LoginBackground" Width="220" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-320,0,0" Background="#2e2e2e" CornerRadius="6">
+                    <Grid>
+                        <TextBox Width="200" x:Name="LoginTEXT" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" Text="" Foreground="White" Background="Transparent" FontFamily="/Bedrock;component/#Google Sans Medium" FontSize="18" BorderThickness="0" MaxLength="18"/>
+                    </Grid>
+                </Border>
+
+                <TextBlock x:Name="PasswordPrompt" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-160,-250,0,0" Text="Пароль:" Foreground="Gray" FontSize="10"/>
+                <Border x:Name="PasswordBackground" Width="220" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-190,0,0" Background="#2e2e2e" CornerRadius="6">
+                    <Grid>
+                        <PasswordBox Width="200" x:Name="PasswordTEXT" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" PasswordChar="•" Foreground="White" Background="Transparent" FontFamily="/Bedrock;component/#Google Sans Medium" FontSize="18" BorderThickness="0" MaxLength="20"/>
+                    </Grid>
+                </Border>
+
+                <TextBlock x:Name="EmailPrompt" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-169,-250,0,0" Text="E-mail" Foreground="Gray" FontSize="10" Visibility="Hidden" Opacity="0"/>
+                <Border x:Name="EmailBackground" Width="220" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-190,0,0" Background="#2e2e2e" CornerRadius="6" Visibility="Hidden" Opacity="0">
+                    <Grid>
+                        <TextBox Width="200" x:Name="EmailTEXT" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="White" Background="Transparent" FontFamily="/Bedrock;component/#Google Sans Medium" FontSize="18" BorderThickness="0" MaxLength="40"/>
+                    </Grid>
+                </Border>
+
+                <TextBlock x:Name="PasswordRepeatPrompt" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-125,10,0,0" Text="Повтор пароля:" Foreground="Gray" FontSize="10" Visibility="Hidden" Opacity="0"/>
+                <Border x:Name="PasswordRepeatBackground" Width="220" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,70,0,0" Background="#2e2e2e" CornerRadius="6" Visibility="Hidden" Opacity="0">
+                    <Grid>
+                        <PasswordBox Width="200" x:Name="PasswordRepeatTEXT" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" PasswordChar="•" Foreground="White" Background="Transparent" FontFamily="/Bedrock;component/#Google Sans Medium" FontSize="18" BorderThickness="0" MaxLength="20"/>
+                    </Grid>
+                </Border>
+
+
+                
+                <TextBlock x:Name="RegisterPrompt" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,445,0,0" Text="Уже есть аккаунт?" Foreground="White" Opacity="0"/>
+                <Button x:Name="RegisterPromptButton" Width="100" Height="10" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,450,0,0" Background="Transparent" Opacity="0" Visibility="Hidden" Click="RegsiterPromptButton_Click" MouseEnter="RegsiterPromptButton_MouseEnter" MouseLeave="RegsiterPromptButton_MouseLeave"/>
+                
+                <Border x:Name="RegisterButtonBackground" Width="170" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,380,0,0" Background="#e06b15" BorderBrush="White" BorderThickness="2" CornerRadius="10">
+                    <Grid>
+                        <Label x:Name="RegisterButtonLabel" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Content="Регистрация" Foreground="White" FontSize="20" FontFamily="Google Sans Medium"/>
+                        <Button x:Name="RegisterButton" Width="170" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Opacity="0" Click="RegisterButton_Click" MouseEnter="RegisterButton_MouseEnter" MouseLeave="RegisterButton_MouseLeave"/>
+                    </Grid>
+                </Border>
+
+                <Border x:Name="Decorations">
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,299,0,0" Text="или" FontSize="20" Foreground="White" FontFamily="/Bedrock;component/#Google Sans Medium"/>
+                        <Border Width="80" Height="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="140,300,0,0" Background="White" CornerRadius="1"/>
+                        <Border Width="80" Height="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-140,300,0,0" Background="White" CornerRadius="1"/>
+                    </Grid>
+                </Border>
+                
+
+                <Border x:Name="LoginButtonBackground" Width="170" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,220,0,0" Background="#e06b15" BorderBrush="White" BorderThickness="2" CornerRadius="10">
+                    <Grid>
+                        <Label x:Name="LoginButtonLabel" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Content="Войти" Foreground="White" FontSize="20" FontFamily="Google Sans Medium"/>
+                        <Button x:Name="LoginButton" Width="170" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Opacity="0" Click="LoginButton_Click" MouseEnter="LoginButton_MouseEnter" MouseLeave="LoginButton_MouseLeave"/>
+                    </Grid>
+                </Border>
+
+
+            </Grid>
+        </Border>
+
+        <Border x:Name="UIExit" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="240,-460,0,0">
+            <Grid>
+                <Viewbox x:Name="UIExitIcon" Width="28" Height="28">
+                    <Canvas Width="24" Height="24">
+                        <Path Fill="#e06b15" Data="M8 3H16C18.76 3 21 5.24 21 8V16C21 18.76 18.76 21 16 21H8C5.24 21 3 18.76 3 16V8C3 5.24 5.24 3 8 3Z" />
+                    </Canvas>
+                </Viewbox>
+                <Viewbox Width="18" Height="18">
+                    <Canvas Width="24" Height="24">
+                        <Path Fill="White" Data="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12L20 6.91Z" />
+                    </Canvas>
+                </Viewbox>
+                <Button x:Name="UIExitButton" Width="22" Height="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Opacity="0" Click="UIExitButton_Click" MouseEnter="UIExitButton_MouseEnter" MouseLeave="UIExitButton_MouseLeave" />
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
